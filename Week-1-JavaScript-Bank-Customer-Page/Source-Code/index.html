@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="trigger()">
+    <div class="container">
+        <header class="header-card">
+            <h1 id="hover">Student Bank</h1>
+            <p class="welcome-text">Welcome customer !!!</p>
+        </header>
+
+        <main class="content-card">
+            <div id="demo">
+                <h2>Diwali Special Offer</h2>
+                <p class="instruction-heading">Follow the below Steps to get Diwali coupon:-</p>
+                <ol class="steps-list">
+                    <li>Enter your customer ID in the textbox</li>
+                    <li>Click on validate customer button</li>
+                    <li>Click on Register button to hide all the above steps and can apply for coupons</li>
+                </ol>
+                <div class="action-group">
+                    <button type="button" class="btn-secondary" onclick="hideSteps()">Click here to Register</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="custID">Enter Customer ID:</label>
+                <input type="text" id="custID" name="customerID" placeholder="e.g. TXYZ1001">
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn-secondary" id="btnValidate">Validate customer</button>
+                <button type="button" class="btn-primary" onclick="generateCoupon()">Click here to generate coupon</button>
+            </div>
+
+            <div id="resultOutput" class="output-container"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
